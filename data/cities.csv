@@ -1,0 +1,6 @@
+city,state,population,median_income,car_ownership_rate,online_adoption
+Austin,TX,965000,78000,0.85,0.60
+Phoenix,AZ,1600000,72000,0.88,0.55
+Nashville,TN,715000,69000,0.83,0.50
+Richmond,VA,230000,68000,0.82,0.48
+Orlando,FL,320000,65000,0.84,0.52
