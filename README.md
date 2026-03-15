@@ -12,10 +12,10 @@ This is a personal project using a small dataset that analyzes market opportunit
 ## Project Structure
 
 data/
-Market and demographic datasets
+<br>Market and demographic datasets
 
 src/
-Python analysis modules
+<br>Python analysis modules
 
 ## Methods
 Market Opportunity Scoring
