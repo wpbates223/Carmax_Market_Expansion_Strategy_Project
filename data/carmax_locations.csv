@@ -1,5 +1,5 @@
-city,state
-Richmond,VA
-Houston,TX
-Atlanta,GA
-Los Angeles,CA
+city,state,lat,lon
+Richmond,VA,37.5407,-77.4360
+Houston,TX,29.7604,-95.3698
+Atlanta,GA,33.7490,-84.3880
+Los Angeles,CA,34.0522,-118.2437
