@@ -24,7 +24,7 @@ def plot_clusters(df):
         plt.scatter(
             subset["population"],
             subset["opportunity_score"],
-            label=f"Cluster {cluster}"
+            label=subset["cluster_label"].iloc[0]
         )
 
     plt.xlabel("Population")
