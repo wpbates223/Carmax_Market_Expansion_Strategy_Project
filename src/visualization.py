@@ -12,3 +12,24 @@ def plot_opportunities(df):
     plt.ylabel("Opportunity Score")
 
     plt.show()
+
+
+def plot_clusters(df):
+
+    plt.figure(figsize=(8, 6))
+
+    for cluster in df["cluster"].unique():
+        subset = df[df["cluster"] == cluster]
+
+        plt.scatter(
+            subset["population"],
+            subset["opportunity_score"],
+            label=f"Cluster {cluster}"
+        )
+
+    plt.xlabel("Population")
+    plt.ylabel("Opportunity Score")
+    plt.title("Market Clusters (Strategy Segmentation)")
+
+    plt.legend()
+    plt.show()
