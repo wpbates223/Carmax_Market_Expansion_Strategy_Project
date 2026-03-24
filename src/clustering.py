@@ -4,13 +4,19 @@ from sklearn.preprocessing import StandardScaler
 
 def run_clustering(df, k=3):
 
-    features = df[[
+    feature_cols = [
         "population",
         "median_income",
         "car_ownership_rate",
         "online_adoption",
         "opportunity_score"
-    ]]
+    ]
+
+    # Drop NaNs 
+    df = df.dropna(subset=feature_cols)
+
+    # Select features
+    features = df[feature_cols]
 
     # Normalize data 
     scaler = StandardScaler()
@@ -38,10 +44,10 @@ def label_clusters(df):
 
     for cluster, row in cluster_summary.iterrows():
 
-        if row["population"] > 1_000_000:
-            labels[cluster] = "High Growth Urban"
+        if row["opportunity_score"] == cluster_summary["opportunity_score"].max():
+            labels[cluster] = "High Opportunity Market / Urban Core"
 
-        elif row["online_adoption"] > 0.55:
+        elif row["online_adoption"] == cluster_summary["online_adoption"].max():
             labels[cluster] = "Digital-First Market"
 
         else:

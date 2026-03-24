@@ -6,6 +6,7 @@ from src.store_strategy import assign_store_type
 from src.visualization import plot_opportunities, plot_clusters
 from src.geo_analysis import create_heatmap
 from src.clustering import run_clustering, label_clusters
+from src.model_evaluation import plot_elbow_method, plot_pca_clusters
 
 def run_pipeline():
 
@@ -31,6 +32,9 @@ def run_pipeline():
     stores_df = load_store_data()
 
     create_heatmap(df, stores_df)
+
+    plot_elbow_method(df)
+    plot_pca_clusters(df)
 
     print(df)
 
