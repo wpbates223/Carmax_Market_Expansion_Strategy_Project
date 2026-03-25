@@ -21,7 +21,7 @@ def plot_opportunities(df):
 def plot_clusters(df):
 
     df = df.sort_values("opportunity_score", ascending=False).head(100)
-    
+
     plt.figure(figsize=(10, 6))
 
     for cluster in df["cluster"].unique():
@@ -41,3 +41,16 @@ def plot_clusters(df):
     plt.legend()
     plt.tight_layout()
     plt.show()
+
+def get_top_markets(df, n=10):
+
+    top_df = df.sort_values("opportunity_score", ascending=False).head(n)
+
+    return top_df[[
+        "city",
+        "state",
+        "population",
+        "median_income",
+        "opportunity_score",
+        "cluster_label"
+    ]]

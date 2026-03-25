@@ -1,0 +1,11 @@
+city,state,population,median_income,opportunity_score,cluster_label
+san francisco,CA,4648486,136689.0,0.6907079789881984,Digital-First Market
+new york,NY,19940274,76607.0,0.6356016496846192,High Opportunity Market / Urban Core
+seattle,WA,4145494,116068.0,0.5554677371848374,Digital-First Market
+los angeles,CA,12927614,76244.0,0.49156184202207165,High Opportunity Market / Urban Core
+san diego,CA,3298799,98657.0,0.43274445589257093,Digital-First Market
+boston,MA,5025517,89212.0,0.4103850045515312,Digital-First Market
+chicago,IL,9406924,71673.0,0.3926291004904877,High Opportunity Market / Urban Core
+riverside,CA,4744214,83448.0,0.3697366063589769,Digital-First Market
+denver,CO,3050512,85853.0,0.35006612044666174,Digital-First Market
+dallas,TX,8344032,63985.0,0.3245031743119656,High Opportunity Market / Urban Core
